@@ -1,0 +1,25 @@
+2022/12/03 09:35:03.229 Info   Starting JoyToKey v6.9.1
+2022/12/03 09:35:03.229 Info   ExeFile = C:\Program Files (x86)\JoyToKey\JoyToKey.exe
+2022/12/03 09:35:03.229 Info   Args = C:\Program Files (x86)\JoyToKey\JoyToKey.exe
+2022/12/03 09:35:03.229 Info   DataDirectory = C:\Users\hoge\Documents\JoyToKey\
+2022/12/03 09:35:03.229 Info   Profile = 
+2022/12/03 09:35:03.229 Info   IniFile = C:\Users\hoge\Documents\JoyToKey\JoyToKey.ini
+2022/12/03 09:35:03.229 Info   Loading ini file: C:\Users\hoge\Documents\JoyToKey\JoyToKey.ini (AppInfo.cpp#259)
+2022/12/03 09:35:03.229 Info   License Registered : B5XG-FCBX-JFFG (AppInfo.cpp#220)
+2022/12/03 09:35:03.316 Info   Loading XInput1_3.dll (Joystick.cpp#158)
+2022/12/03 09:35:03.318 Info   Initialized XInput (Joystick.cpp#180)
+2022/12/03 09:35:03.347 Info   Initialized DirectInput (Joystick.cpp#193)
+2022/12/03 09:35:03.347 Info   Loading hid.dll (JoystickHID.h#58)
+2022/12/03 09:35:03.347 Info   Initialized HID (Joystick.cpp#202)
+2022/12/03 09:35:03.347 Info   ConfigDir=C:\Users\hoge\Documents\JoyToKey\*.cfg (ConfigFileManager.cpp#43)
+2022/12/03 09:35:03.354 Info   --- Loading "AppLink.dat" --- (AppLink\AppLinkManager.cpp#36)
+2022/12/03 09:35:03.354 Info   --- Total 2 record(s) loaded ---
+2022/12/03 09:35:03.364 Info   TimerInit: Initializing timer with x1 speed mode (interval = 16 msec)
+2022/12/03 09:35:03.491 Info   Detected a XI joystick: XInput-0
+2022/12/03 09:35:03.491 Info   DetectJoysticks: Detected 1 XI joystick(s)
+2022/12/03 09:35:03.651 Info   Detected a DI joystick: Controller (JC-U3613M - Xinput Mode), Controller (JC-U3613M - Xinput Mode), 2004056E, {BB7EAA60-481F-11ED-8001-444553540000}
+2022/12/03 09:35:03.674 Info   Joystick #1: XInput Device #1
+2022/12/03 09:35:03.674 Info   1 joystick(s) are detected (Joystick.cpp#281)
+2022/12/03 09:35:04.773 Info   About to load config file "pso2ngs" (ConfigFileManager.cpp#109)
+2022/12/03 09:35:05.188 Info   About to load config file "default" (ConfigFileManager.cpp#109)
+2022/12/03 09:35:05.736 Info   About to load config file "empty" (ConfigFileManager.cpp#109)

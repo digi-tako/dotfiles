@@ -1,0 +1,150 @@
+{
+  // ## テーマ
+  "workbench.colorTheme": "Default Dark+",
+  "workbench.layoutControl.enabled": false,
+  "window.menuBarVisibility": "compact",
+  "window.commandCenter": true,
+  "workbench.colorCustomizations": {
+    "tab.activeBorderTop": "#1ca7e8"
+  },
+
+  // 非アスキー文字を強調表示しない
+  "editor.unicodeHighlight.nonBasicASCII": false,
+
+  // インデントをスペース2個にする
+  "editor.tabSize": 2,
+
+  // ルーラー
+  "editor.rulers": [ 60 ],
+
+  // ## vim
+  // 行頭 <--> 行末の移動を可能にする
+  "vim.whichwrap": "h,l,<,>,[,]",
+  // システムクリップボードを使用
+  "vim.useSystemClipboard": true,
+  "vim.insertModeKeyBindingsNonRecursive": [
+    // ノーマルモードへ
+    {
+      "before": ["Ctrl+j"],
+      "after": ["Esc"]
+    },
+    // 一部のキーでvscodeのアクションを優先化
+    {
+      "before": ["Ctrl+w"],
+      "commands": ["workbench.action.closeActiveEditor"]
+    },
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    // ノーマルモードへ
+    {
+      "before": ["Ctrl+j"],
+      "after": ["Esc"]
+    },
+    // 行末、行頭移動
+    {
+      "before": ["Shift+l"],
+      "after": ["g", "$"]
+    },
+    {
+      "before": ["Shift+h"],
+      "after": ["g", "^"]
+    },
+    // 一部のキーでvscodeのアクションを優先化
+    {
+      "before": ["Ctrl+f"],
+      "commands": ["actions.find"]
+    },
+    {
+      "before": ["Ctrl+h"],
+      "commands": ["editor.action.startFindReplaceAction"]
+    },
+    {
+      "before": ["Ctrl+s"],
+      "commands": ["workbench.action.files.save"]
+    },
+    {
+      "before": ["Ctrl+w"],
+      "commands": ["workbench.action.closeActiveEditor"]
+    },
+    // 表示通りに行移動する
+    {
+      "before": ["k"],
+      "after": ["g", "k"]
+    },
+    {
+      "before": ["g", "k"],
+      "after": ["k"]
+    },
+    {
+      "before": ["j"],
+      "after": ["g", "j"]
+    },
+    {
+      "before": ["g", "j"],
+      "after": ["j"]
+    },
+    // 削除時にヤンクしない
+    {
+      "before": ["x"],
+      "after": ["\"", "_", "x"]
+    },
+    {
+      "before": ["s"],
+      "after": ["\"", "_", "s"]
+    },
+    {
+      "before": ["d"],
+      "after": ["\"", "_", "d"]
+    },
+  ],
+  "vim.visualModeKeyBindingsNonRecursive": [
+    // 行末、行頭移動
+    {
+      "before": ["Shift+l"],
+      "after": ["g", "$"]
+    },
+    {
+      "before": ["Shift+h"],
+      "after": ["g", "^"]
+    },
+    // 一部のキーでvscodeのアクションを優先化
+    {
+      "before": ["Ctrl+f"],
+      "commands": ["actions.find"]
+    },
+    {
+      "before": ["Ctrl+h"],
+      "commands": ["editor.action.startFindReplaceAction"]
+    },
+    {
+      "before": ["Ctrl+w"],
+      "commands": ["workbench.action.closeActiveEditor"]
+    },
+    // 表示通りに行移動する
+    {
+      "before": ["k"],
+      "after": ["g", "k"]
+    },
+    {
+      "before": ["g", "k"],
+      "after": ["k"]
+    },
+    {
+      "before": ["j"],
+      "after": ["g", "j"]
+    },
+    {
+      "before": ["g", "j"],
+      "after": ["j"]
+    },
+    // 削除時にヤンクしない
+    {
+      "before": ["s"],
+      "after": ["\"", "_", "s"]
+    },
+    {
+      "before": ["d"],
+      "after": ["\"", "_", "d"]
+    }
+  ],
+}
