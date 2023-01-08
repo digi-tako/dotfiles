@@ -1,7 +1,6 @@
 {
   // ## テーマ
   "workbench.colorTheme": "Default Dark+",
-  "workbench.layoutControl.enabled": false,
   "window.menuBarVisibility": "compact",
   "window.commandCenter": true,
   "workbench.colorCustomizations": {
@@ -15,7 +14,10 @@
   "editor.tabSize": 2,
 
   // ルーラー
-  "editor.rulers": [ 60 ],
+  "editor.rulers": [80],
+
+  // エディターの改行をマークダウンプレビューにも反映する
+  "markdown.preview.breaks": true,
 
   // ## vim
   // 行頭 <--> 行末の移動を可能にする
@@ -32,13 +34,27 @@
     {
       "before": ["Ctrl+w"],
       "commands": ["workbench.action.closeActiveEditor"]
-    },
+    }
   ],
   "vim.normalModeKeyBindingsNonRecursive": [
     // ノーマルモードへ
     {
       "before": ["Ctrl+j"],
       "after": ["Esc"]
+    },
+    // 複数行移動
+    {
+      "before": ["Shift+j"],
+      "after": ["5", "j"]
+    },
+    {
+      "before": ["Shift+k"],
+      "after": ["5", "k"]
+    },
+    // 改行削除
+    {
+      "before": ["Shift+x"],
+      "after": ["Shift+j"]
     },
     // 行末、行頭移動
     {
@@ -65,6 +81,15 @@
     {
       "before": ["Ctrl+w"],
       "commands": ["workbench.action.closeActiveEditor"]
+    },
+    // 同じインデント高さの行にジャンプ
+    {
+      "before": ["Ctrl+Up"],
+      "commands": ["indentation-level-movement.moveUp"]
+    },
+    {
+      "before": ["Ctrl+Down"],
+      "commands": ["indentation-level-movement.moveDown"]
     },
     // 表示通りに行移動する
     {
@@ -96,6 +121,10 @@
       "before": ["d"],
       "after": ["\"", "_", "d"]
     },
+    {
+      "before": ["c"],
+      "after": ["\"", "_", "c"]
+    }
   ],
   "vim.visualModeKeyBindingsNonRecursive": [
     // 行末、行頭移動
@@ -106,6 +135,15 @@
     {
       "before": ["Shift+h"],
       "after": ["g", "^"]
+    },
+    // 複数行移動
+    {
+      "before": ["Shift+j"],
+      "after": ["5", "j"]
+    },
+    {
+      "before": ["Shift+k"],
+      "after": ["5", "k"]
     },
     // 一部のキーでvscodeのアクションを優先化
     {
@@ -119,6 +157,15 @@
     {
       "before": ["Ctrl+w"],
       "commands": ["workbench.action.closeActiveEditor"]
+    },
+    // 同じインデント高さの行にジャンプ
+    {
+      "before": ["Ctrl+Up"],
+      "commands": ["indentation-level-movement.selectUp"]
+    },
+    {
+      "before": ["Ctrl+Down"],
+      "commands": ["indentation-level-movement.selectDown"]
     },
     // 表示通りに行移動する
     {
@@ -145,6 +192,10 @@
     {
       "before": ["d"],
       "after": ["\"", "_", "d"]
+    },
+    {
+      "before": ["c"],
+      "after": ["\"", "_", "c"]
     }
   ],
 }
